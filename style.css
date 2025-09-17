@@ -1,0 +1,143 @@
+/* Dark futuristic theme */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0d1117;
+  color: #e6edf3;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #161b22;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+header h1 {
+  margin: 0;
+  color: #00e5ff;
+}
+
+#month-nav {
+  margin-top: 10px;
+}
+
+#month-nav button {
+  background: #238636;
+  border: none;
+  padding: 6px 12px;
+  margin: 0 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+#month-label {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  background: #161b22;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+#calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.calendar-day {
+  background: #21262d;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.calendar-day:hover {
+  background: #30363d;
+  transform: translateY(-3px);
+}
+
+.calendar-day.active {
+  border: 2px solid #00e5ff;
+}
+
+button {
+  padding: 8px 15px;
+  background: linear-gradient(90deg, #4cafef, #00e5ff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+button:hover {
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.7);
+}
+
+.session {
+  border: 1px solid #30363d;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  background: #21262d;
+}
+
+.timer-display {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #444c56;
+  background: #0d1117;
+  color: #fff;
+  padding: 8px;
+}
+
+.tag-list {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: #238636;
+  color: white;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #161b22;
+  color: #aaa;
+}
